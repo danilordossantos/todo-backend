@@ -1,0 +1,53 @@
+GET http://localhost:3004/api/tasks
+
+###
+
+POST http://localhost:3004/api/tasks
+Content-Type: application/json
+
+{
+  "content": "Estudar Node.js",
+  "priority": "high"
+}
+
+###
+
+POST http://localhost:3004/api/tasks
+Content-Type: application/json
+
+{
+    "content": "Estudar React",
+    "priority": "high",
+    "done": true
+}
+
+###
+
+GET http://localhost:3004/api/tasks/6a69616e6322455339565a75
+
+###
+
+PUT http://localhost:3004/api/tasks/6a69616e6322455339565a75
+Content-Type: application/json
+
+{
+    "content": "Estudar React",
+    "priority": "high",
+    "done": false
+}
+
+### 
+
+POST http://localhost:3004/api/tasks
+Content-Type: application/json
+
+{
+    "content": "test",
+    "priority": "low",
+    "done": true
+}
+
+###
+
+DELETE http://localhost:3004/api/tasks/6a69634a6322455339565a76
+Content-Type: application/json
